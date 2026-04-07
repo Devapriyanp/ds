@@ -4,7 +4,6 @@ from sklearn.neighbors import KNeighborsClassifier
 
 newdf = newpd.read_csv("data.csv")
 
-# Use numeric data
 newdf = newdf.select_dtypes(include=['number'])
 
 newX = newdf.iloc[:, :-1]
